@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulary Noticies</title>
+    <script type="text/javascript" src="CategoriesNoticies.js"></script>
+</head>
+<body>
+    <h1>Categoria per la noticia</h1>
+    <form>
+        <label>Categoria</label>
+        <br><br>
+        <input type="text" placeholder="Categoria de la  noticia" id="category" maxlength="20" pattern="[A-Z][a-z]{1,19}" title="Introdueix de 2 a 20 lletres i començant amb Majúscules" required>
+        <br><br>
+        <button type="button" id="btSend">Enviar</button>
+        <button type="button" id="btList">LListar Categories</button>
+    </form>
+
+    <p id="message"></p>
+    <div id="categoryList"></div>
+</body>
+</html>
