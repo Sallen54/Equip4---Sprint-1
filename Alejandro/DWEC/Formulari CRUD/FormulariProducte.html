@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulari Register</title>
+  </head>
+  <body>
+    <h2>Formulari Register</h2>
+
+    <form id="formulariRegistre">
+      <label for="user_agent">User Agent:</label>
+      <textarea id="user_agent" name="user_agent" rows="2" required></textarea>
+      <br /><br />
+
+      <label for="client_id">Client ID:</label>
+      <input type="number" id="client_id" name="client_id" required />
+      <br /><br />
+
+      <label for="comparator_id">Comparator ID:</label>
+      <input type="number" id="comparator_id" name="comparator_id" required />
+      <br /><br />
+
+      <label for="favorite_id">Favorite ID:</label>
+      <input type="number" id="favorite_id" name="favorite_id" required />
+      <br /><br />
+
+      <label for="date_start">Data inici:</label>
+      <input type="datetime-local" id="date_start" name="date_start" />
+      <br /><br />
+
+      <label for="date_end">Data fi:</label>
+      <input type="datetime-local" id="date_end" name="date_end" />
+      <br /><br />
+
+      <button type="submit">Guardar</button>
+      <button type="button" id="netejarFormulari">Netejar formulari</button>
+    </form>
+
+    <h3>Registres guardats:</h3>
+    <table border="1" id="taulaResultat">
+      <thead>
+        <tr>
+          <th>Session ID</th>
+          <th>User Agent</th>
+          <th>Client ID</th>
+          <th>Comparator ID</th>
+          <th>Favorite ID</th>
+          <th>Data inici</th>
+          <th>Data fi</th>
+          <th>Accions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
